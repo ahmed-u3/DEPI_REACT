@@ -1,0 +1,7 @@
+- V8 engine java script
+- instance vs static
+- pass by refrence
+- pass by value
+- pass by out
+- diff between website and web app
+- <meta http-equiv="refresh" content = "5;url">
