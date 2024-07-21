@@ -75,10 +75,12 @@
                         <td>
                             <input 
                             pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" 
+                            minlength="6"
                             type="password" 
                             placeholder="Enter Password" 
                             name="psw" 
                             required size="25px"
+                            title="make sure there's caps words and numbers in password with minlength of 6 characters"
                             >
                         </td>
                     </tr>
