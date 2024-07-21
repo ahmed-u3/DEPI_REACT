@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in | BAOrchestra</title>
+</head>
+<body>
+    <header>
+        <h1>Sign in Page</h1>
+        <nav>
+            <table width = "100%" >
+                <tr>
+                    <td>
+                        <a href="./index.html" ><img width = "50px" height = "50px" src="./ico/orchestra.png" alt="icon" > </a>
+                    </td>
+                    <td colspan="2" align="center" width="5%">
+                        <a href="./index.html">Home</a>
+                    </td>
+                    <td align="center" width="5%">
+                        <a href="./about.html">About</a>
+                    </td>
+                    <td align="center" width="5%">
+                        <a href="./signin.html">Sign in</a>
+                    </td>
+                    <td align="center" width="5%">
+                        <a href="./signup.html">Sign up</a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div class="container">
+            <table align="center" cellpadding ="20" style="margin-top: 50px;">
+                <caption>
+                    <b style="font-size: 24px;">Sign In</b>
+                </caption>
+                <tr>
+                    <td>
+                        <label for="uname" style="font-size: 18px; padding: 8px;">
+                            <b>Username</b>
+                        </label>
+                    </td>
+                    <td>
+                        <input minlength="4" maxlength="20" type="text" placeholder="Enter Username" name="uname" required size="25px" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="psw"><b style="font-size: 18px; padding: 8px;">Password</b></label>
+                    </td>
+                    <td>
+                        <input pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" type="password" placeholder="Enter Password" name="psw" required size="25px">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> 
+                        <center>
+                            <button type="submit" style="font-size: 18px; padding: 10px 20px; border: none;">Login</button> 
+                        </center>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="font-size: 16px;">
+                                Remember me
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <center>
+                            <a href="./signup.html">
+                                <button style="font-size: 18px; padding: 10px 20px; border: none;">
+                                    Sign up
+                                </button>
+                            </a>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+<hr>
+<footer>
+    <p>&copy; 2024 BAOrchestra. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:info@baorchestra.com">info@baorchestra.com</a> | Phone: +1-234-567-890</p>
+</footer>
+</html>
