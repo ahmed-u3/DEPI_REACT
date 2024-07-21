@@ -33,79 +33,129 @@
     <hr>
     <main>
         <div class="container">
-            <table align="center" cellpadding ="20" style="margin-top: 50px;">
-                <caption>
-                    <b style="font-size: 24px;">Create a new account</b>
-                </caption>
-                <tr>
-                    <td>
-                        <input minlength="4" maxlength="20" type="text" placeholder="First Name" name="fname" required size="25px" style="font-size: 15px; padding: 8px;">
-                    </td>
-                    <td>
-                        <input minlength="4" maxlength="20" type="text" placeholder="Surname" name="Sname" required size="25px" style="font-size: 15px; padding: 8px;">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input minlength="4" maxlength="20" type="text" placeholder="Username" name="uname" required size="60px" style="font-size: 15px; padding: 8px;">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input maxlength="13" placeholder="Mobile number" type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required size="60px" style="font-size: 15px; padding: 8px;">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input placeholder="Email address" type="email" id="email" name="email" required style="font-size: 15px; padding: 8px;" size="60px">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" type="password" placeholder="New Password" name="psw" required style="font-size: 15px; padding: 8px;" size="60px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="dob" style="font-size: 18px; padding: 8px;">
-                            <b>Date of Birth: </b>
-                        </label>
-                    </td>
-                    <td>
-                        <input type="date" id="dob" name="dob" required >
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <center>
-                            <select id="gender" name="gender" required>
-                                <option value="">Select your gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                        </center>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <center>
-                            <button type="submit" style="font-size: 18px; padding: 10px 20px; border: none;">Sign Up</button> 
-                        </center>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <center>
-                            <a href="./signin.html">
-                                <button style="font-size: 18px; padding: 10px 20px; border: none;">
-                                    Sign In
-                                </button>
-                            </a>
-                        </center>
-                    </td>
-                </tr>
-            </table>
+                <table align="center" cellpadding ="20" style="margin-top: 50px;">
+                    <caption>
+                        <b style="font-size: 24px;">Create a new account</b>
+                    </caption>
+                    <form action>
+                    <tr>
+                        <td>
+                            <input 
+                            minlength="4" maxlength="20" 
+                            type="text" 
+                            placeholder="First Name" 
+                            name="fname" 
+                            required size="25px" style="font-size: 15px; padding: 8px;">
+                        </td>
+                        <td>
+                            <input 
+                            minlength="4" maxlength="20" 
+                            type="text" 
+                            placeholder="Surname" 
+                            name="Sname" 
+                            required size="25px" style="font-size: 15px; padding: 8px;"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input 
+                            minlength="4" maxlength="20" 
+                            type="text" 
+                            placeholder="Username" 
+                            name="uname" 
+                            required size="60px" style="font-size: 15px; padding: 8px;" 
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input
+                            minlength="11" maxlength="13" 
+                            placeholder="Mobile number" 
+                            type="tel" 
+                            id="phone" 
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                            required size="60px" style="font-size: 15px; padding: 8px;"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input 
+                            placeholder="Email address" 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required style="font-size: 15px; padding: 8px;" size="60px"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input 
+                            pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" 
+                            type="password" 
+                            placeholder="New Password" 
+                            name="psw" 
+                            required style="font-size: 15px; padding: 8px;" size="60px"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob" style="font-size: 18px; padding: 8px;">
+                                <b>Date of Birth: </b>
+                            </label>
+                        </td>
+                        <td>
+                            <input 
+                            type="date" 
+                            id="dob" 
+                            name="dob" 
+                            required 
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select your gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <button type="submit" style="font-size: 18px; padding: 10px 20px; border: none;">
+                                    Sign Up
+                                </button> 
+                            </center>
+                        </td>
+                    </tr>
+                </form>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <a href="./signin.html">
+                                    <button style="font-size: 18px; padding: 10px 20px; border: none;">
+                                        Sign In
+                                    </button>
+                                </a>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
         </div>
     </main>
 </body>
+<hr>
+<footer>
+    <p>&copy; 2024 BAOrchestra. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:info@baorchestra.com">info@baorchestra.com</a> | Phone: +1-234-567-890</p>
+</footer>
 </html>
