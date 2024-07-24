@@ -1,3 +1,4 @@
+/*Headers have different sizes*/
 h1{
     font-size: 58px;
 }
@@ -17,17 +18,23 @@ h6{
     font-size: 18px;
 }
 
+/*Remove underline in links*/
 div a{
     text-decoration: none;
 }
 section a{
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
 
+/*Image has 70% width of the page with max 700px*/
 img{
     width: 70%;
     max-width: 700px;
 }
+/*Changing in header background colors*/
 .header{
     background-color: black;
 }
@@ -46,3 +53,88 @@ header nav:nth-of-type(2) {
     border: 5px solid gray; 
 }
 
+/*Changing in hero section*/
+.hero {
+    border: 5px solid;
+}
+/*First paragraph after h4*/
+h4 + p{
+    background-color: cadetblue;
+}
+/*Change in Try for free button*/
+button:nth-of-type(2){
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+/*changes divs bg of the child of class services*/
+.services > div{
+    background-color: red;
+    color: white;
+}
+article{
+    background-color: antiquewhite;
+}
+/*change p bg of child of article */
+article > p{
+    background-color: gray;
+}
+
+.download a
+{
+    color: black;
+}
+
+/*Files that end with each data type has different color*/
+.download a[href $= ".pdf"] span
+{
+    background-color: black;
+    color: white;
+}
+.download a[href $= ".png"] span
+{
+    background-color: green;
+    color: white;
+}
+.download a[href $= ".txt"] span
+{
+    background-color: blue;
+    color: white;
+}
+.download a[href $= ".html"] span
+{
+    background-color: orange;
+    color: white;
+}
+.download a[href $= ".js"] span
+{
+    background-color: yellow;
+    color: white;
+}
+
+.download a span
+{
+    background-color: red;
+}
+
+
+/*Change background of any link doesn't have https*/
+.download a:not([href ^= "https"])
+{
+    background-color: lightcoral;
+    color: white;
+}
+/* change the bg color of any link contains y  */
+.download a[href *= "y"]
+{
+    background-color: lightgreen;
+}
+/* change the color of any link contains z  */
+.download a[href *= "z"]
+{
+    color:darkmagenta;
+}
+.download a[href *= "z"] span
+{
+    color:white;
+}
