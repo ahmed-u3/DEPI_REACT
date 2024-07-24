@@ -111,7 +111,7 @@ article > p{
     background-color: yellow;
     color: white;
 }
-
+/*Change background of each file doesn't have extention ig?*/
 .download a span
 {
     background-color: red;
