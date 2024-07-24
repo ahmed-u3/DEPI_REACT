@@ -1,0 +1,21 @@
+a[target="_blank"] {
+  background-color: red;
+}
+
+a[href="/"] {
+  background-color: black;
+  color: white;
+}
+
+a[href*="https"] {
+  background-color: blue;
+  font-size: 30px;
+  color: white;
+}
+
+a[href^="zhttp"] {
+  background-color: cadetblue;
+}
+.sec-nav a[href$="net"] {
+  background-color: chocolate;
+}

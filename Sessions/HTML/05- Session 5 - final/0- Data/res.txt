@@ -1,0 +1,8 @@
+pattern
+
+- pattern="https://.+"
+
+- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}"
+title="Must contain at least one number, one uppercase letter, one lowercase letter, one special character, and at least 8 or more characters"
+--------------------------
+

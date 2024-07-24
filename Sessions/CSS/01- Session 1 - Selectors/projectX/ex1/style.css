@@ -1,0 +1,67 @@
+/* * {
+    border: 1px solid red;
+} */
+
+/* p {
+    background-color: blue;
+}
+
+h2 {
+    background-color: red;
+} */
+
+.child {
+    background-color: red;
+}
+
+/* 
+.art p {
+    background-color: aquamarine;
+}  */
+
+/* 
+.art > p {
+    background-color: blueviolet;
+} */
+
+/* .art h2 ~ p {
+    background-color: aqua;
+} */
+/* 
+.art h2 + p {
+    background-color: brown;
+} */
+/* 
+.art >  h2 + p {
+    background-color: blue;
+}
+.art .child  h2 + p {
+    background-color: blue;
+} */
+
+
+header nav ul a[href="/"] {
+    background-color: blue;
+    color: white;
+}
+header nav ul a[href *="auth"] {
+    background-color: red;
+    color: white;
+}
+
+header nav ul a[href ^="https"] {
+    background-color: yellow;
+    color: white;
+}
+
+
+header nav ul a[href $=".pdf"] {
+    background-color: coral;
+    color: white;
+}
+
+
+
+p[bla7] {
+    background-color: chartreuse;
+}

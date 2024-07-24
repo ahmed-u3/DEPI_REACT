@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="userName">Username</label>
+      <input name="userName" id="userName" type="text" />
+      <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <input
+        pattern="https://.+"
+        title="enter valid url"
+        name="url"
+        placeholder="web url ..."
+        type="url"
+      />
+      <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <input
+        name="pwd"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}"
+        title="Must contain at least one number, one uppercase letter, one lowercase letter, one special character, and at least 8 or more characters"
+        type="text"
+      />
+      <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <fieldset>
+        <legend>login</legend>
+        <input type="text" placeholder="Username" />
+        <input type="text" placeholder="password" />
+      </fieldset>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <input name="q" type="search" />
+      <button>Search</button>
+    </form>
+    <hr />
+    <form action="">
+      <datalist id="products">
+        <option value="t1">T-Shirt 1</option>
+        <option value="t2">T-Shirt 2</option>
+        <option value="t3">T-Shirt 3</option>
+        <option value="t4">T-Shirt 4</option>
+
+        <option value="s1">Shoes 1</option>
+        <option value="s1">Shoes 1</option>
+        <option value="s3">Shoes 3</option>
+        <option value="s4">Shoes 4</option>
+      </datalist>
+
+      <input list="products" name="q" type="search" />
+      <button>Search</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <input value="3500" min="1200" max="4999" name="price" type="range" />
+      <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <p>what is your fav pet?!</p>
+      <input value="Dog" name="favPet" id="dog" type="radio" />
+      <label for="dog">Dog</label>
+      <br />
+      <input value="Cat" name="favPet" id="cat" type="radio" />
+      <label for="cat">Cat</label>
+      <br />
+      <button>Submit</button>
+    </form>
+
+    <hr />
+    <form action="">
+      <p>what is your fav browser?!</p>
+      <input value="chrome" type="checkbox" name="favBrowser" id="chrome" />
+      <label for="chrome">Chrome</label>
+      <br />
+      <input value="firefox" type="checkbox" name="favBrowser" id="firefox" />
+      <label for="firefox">Firefox</label>
+      <br />
+      <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <select name="prod" id="">
+        <optgroup label="ihone">
+          <option value="iph">iphone 15 pro max</option>
+          <option value="iph">iphone 15 pro max</option>
+          <option value="iph">iphone 15 pro max</option>
+          <option value="iph">iphone 15 pro max</option>
+        </optgroup>
+
+        <optgroup label="Other">
+          <option value="cn">Canon d650</option>
+          <option value="cn">Canon d650</option>
+          <option value="cn">Canon d650</option>
+          <option value="cn">Canon d650</option>
+        </optgroup>
+        <optgroup label="Samsung">
+          <option value="12345">Samsung s24</option>
+          <option value="12345">Samsung s24</option>
+          <option value="12345">Samsung s24</option>
+          <option value="12345">Samsung s24</option>
+        </optgroup>
+      </select>
+      <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <select size="4" multiple name="prod" id="">
+        <optgroup label="ihone">
+          <option value="iph">iphone 15 pro max</option>
+          <option value="iph">iphone 15 pro max</option>
+          <option value="iph">iphone 15 pro max</option>
+          <option value="iph">iphone 15 pro max</option>
+        </optgroup>
+
+        <optgroup label="Other">
+          <option value="cn">Canon d650</option>
+          <option value="cn">Canon d650</option>
+          <option value="cn">Canon d650</option>
+          <option value="cn">Canon d650</option>
+        </optgroup>
+        <optgroup label="Samsung">
+          <option value="12345">Samsung s24</option>
+          <option value="12345">Samsung s24</option>
+          <option value="12345">Samsung s24</option>
+          <option value="12345">Samsung s24</option>
+        </optgroup>
+      </select>
+      <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <textarea rows="20" cols="70" name="post" id=""></textarea>
+      <button>new post</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <input required type="text" name="Username" placeholder="username" />
+      <input required type="password" placeholder="password" name="pwd" />
+      <button>Login</button>
+    </form>
+    <hr />
+    <form action="">
+      <input
+        minlength="4"
+        maxlength="20"
+        type="text"
+        name="Username"
+        placeholder="username"
+      />
+      <button>Signup</button>
+    </form>
+
+    <hr />
+
+    <form action="">
+      <input
+        disabled
+        value="Ahmed"
+        type="text"
+        name="Username"
+        placeholder="username"
+      />
+      <input
+        readonly
+        value="Ahmed"
+        type="text"
+        name="Username"
+        placeholder="username"
+      />
+      <button>Edit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+/* * {
+  border: 3px solid red;
+} */
+
+a {
+  color: red;
+}
+
+p {
+  border: 1px solid blue;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+.tst {
+  background-color: antiquewhite;
+}

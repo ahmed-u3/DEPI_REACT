@@ -1,0 +1,9 @@
+/**************************************************************************
+**************************** Resources ************************************
+***************************************************************************/
+|--> https://www.w3schools.com/cssref/css_default_values.php
+|
+|--> https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+|
+|--> https://learn.shayhowe.com/advanced-html-css/complex-selectors/
+|

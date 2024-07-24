@@ -1,0 +1,10 @@
+#article {
+  border: 5px solid black;
+}
+
+/* #article header ~ p {
+  background-color: red;
+} */
+#article header + p {
+  background-color: red;
+}

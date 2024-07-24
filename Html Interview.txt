@@ -1,0 +1,27 @@
+=> Html 
+
+1- what is full form for html?
+2- why we use html/ what is the use for html?
+3- what is the full form of http?
+4- why we use http?
+5- what is the difference between http and https?
+6- when website load in browser, order what content loading first, html, css , js and why?
+7- what is difference between elements and tags in html?
+8- What are semantic tags in HTML? Give me 10 examples of them, their uses, and their benefits.
+9- why we use <!DOCTYPE html>  in top of html page?
+10- what is the difference between div and section?
+11- what are the attributes in html, why we use attributes ? give me 3 examples
+12- Why do we use meta tags in HTML? What are their advantages and what problems can occur if they are not used on a website?
+ Give me 5 examples of the most important meta tags that your website might need.
+13- what is the difference between block and inline in html? give me 3 examples for each
+14- How much space does a block element and an inline element take in HTML?
+15- What are the different ways to create lists in HTMl
+16- How do you structure a basic HTML document
+17- Describe the different types of HTML comments and their uses.
+18- Describe the purpose and usage of common form elements like <input>, <select>, and <textarea>.
+19- Explain how HTML tables are structured?
+20- How do you validate your HTML code and ensure it adheres to proper standards?
+21- What are some common HTML entities and how are they used? 
+22- Given a basic HTML structure, how would you add a navigation bar and a footer section?
+23- How can you improve the accessibility of a web form by using appropriate HTML elements and attributes?
+24- What are some best practices for writing clean and maintainable HTML code?

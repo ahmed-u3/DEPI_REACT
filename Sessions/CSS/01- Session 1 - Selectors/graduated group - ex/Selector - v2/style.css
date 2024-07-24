@@ -1,0 +1,19 @@
+nav {
+  border: 5px solid black;
+}
+
+/* nav ul {
+  background-color: red;
+} */
+
+/* nav > ul {
+  background-color: red;
+} */
+
+#main-nav > ul {
+  background-color: aqua;
+}
+
+.sec-nav {
+  background-color: chocolate;
+}

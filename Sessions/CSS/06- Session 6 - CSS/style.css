@@ -1,0 +1,45 @@
+nav {
+    background-color: black;
+    color: white;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+nav ul li
+{
+    list-style: none;
+}
+
+nav ul li a[href *="about"]
+{
+    color: peru;
+}
+nav ul li a[href  ^="https:"]
+{
+    color: palegreen;
+}
+
+.title {
+    background-color: antiquewhite;
+}
+.title h2
+{
+    color:brown;
+}
+#kalam {
+    color: blue;
+}
+.about
+{
+    background-color: cadetblue;
+}
+.about h2 + p
+{
+    background-color: brown;
+}
+#kalam2
+{
+    color: bisque;
+}
