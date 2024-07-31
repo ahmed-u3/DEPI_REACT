@@ -1,0 +1,187 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    display: flow-root;
+    align-content: center;
+    height: 8vh;
+    background-color: rgb(255, 250, 244);
+}
+nav img{
+    float: left;
+    margin-left: 20px;
+}
+nav ul{
+    margin-right: 10vh;
+    align-content: center;
+}
+nav ul li{
+    float: right;
+    display: inline;
+    list-style: none;
+    margin-top: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    background-color: antiquewhite;
+    margin: 0.5em;
+    border: 1px solid black;
+    padding: 0.5em;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.hero-class{
+    background-image: url("./Challenge/imgs/hero.jpg");
+    height: 50vh;
+    align-content: center;
+}
+.hero-class div{
+    border: 1px solid aqua;
+    background-color: rgba(0, 255, 255, 0.522);
+    backdrop-filter: blur(10px);
+    width: 50vw;
+    height: 25vh;
+    margin: 0 auto;
+    
+}
+.hero-class p{
+    padding-top: 20px;
+    padding: 15px;
+}
+.hero-class button{
+    background-color: deeppink;
+    color: white;
+    padding: 5px;
+    margin-left: 1vh;
+    border: none;
+}
+.why_us{
+    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-bottom: 40vh;
+}
+/*Reason one*/
+.why_us .reason1{
+    margin-top: 2vh;
+    margin-left: 5vh;
+    border: 1px solid black;
+    list-style-position: inside;
+    width: 40vw;
+    padding-left: 3vh;
+    float: left;
+    padding: 20px;
+    
+}
+.why_us .reason1 ol{
+    list-style-type: lower-alpha;
+}
+.why_us .reason1 h3{
+    padding-left: 3vh;
+}
+/*Reason two*/
+.why_us .reason2{
+    margin-top: 2vh;
+    margin-left: 5vh;
+    border: 1px solid black;
+    list-style-position: inside;
+    width: 40vw;
+    padding-left: 3vh;
+    float: left;
+    padding: 20px;
+}
+.why_us .reason2 ol{
+    list-style-type: lower-alpha;
+}
+.why_us .reason2 h3{
+    padding-left: 3vh;
+}
+.Our-Services{
+    clear: both;
+    background-color: rgba(169, 169, 169, 0.396);
+    padding: 100px;
+}
+.s1{
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    width: 40vw;
+    display: inline-block;
+    padding: 10px;
+}
+.s2{
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    width: 40vw;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 4vh;
+}
+.s3{
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    width: 40vw;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+.s4{
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    width: 40vw;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 4vh;
+}
+
+footer{
+    background-color: black;
+
+}
+.link1{
+    width: 20vw;
+    background-color: rgb(35, 29, 29);
+    display: inline-block;
+    color: white;
+}
+.link1 ul{
+    list-style: none;
+}
+.link1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.link2{
+    width: 20vw;
+    background-color: rgb(35, 29, 29);
+    display: inline-block;
+    color: white;
+}
+.link2 ul{
+    list-style: none;
+}
+.link2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.link3{
+    width: 20vw;
+    background-color: rgb(35, 29, 29);
+    display: inline-block;
+    color: white;
+}
+.link3 ul{
+    list-style: none;
+}
+.link3 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.lower-footer{
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+}
