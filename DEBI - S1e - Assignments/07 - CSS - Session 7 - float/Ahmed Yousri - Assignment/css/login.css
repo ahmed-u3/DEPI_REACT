@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flow-root;
+    align-content: center;
+    height: 10vh;
+    background-color: rgb(255, 250, 244);
+}
+nav img{
+    float: left;
+    margin-left: 20px;
+}
+nav ul{
+    margin-right: 10vh;
+    align-content: center;
+}
+nav ul li{
+    float: right;
+    display: inline;
+    list-style: none;
+    margin-top: 10px;
+}
+nav ul li :hover{
+    background-color: aliceblue;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: antiquewhite;
+    margin: 0.5em;
+    border: 1px solid black;
+    padding: 0.5em;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main{
+    height: 85vh;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #CACACA;
+    background-image: url(../Challenge/imgs/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 85vh ;
+}
+
+.login{
+    margin-left: 85vh;
+    border: 1px solid aqua;
+    background-color: rgba(0, 255, 255, 0.522);
+    backdrop-filter: blur(10px);
+    border-radius: 6px;
+    max-width: 23vw;
+    width: 100%;
+    padding: 30px;
+}
+.login h2{
+    font-size: 28px;
+    text-align: center;
+}
+.login hr{
+    color: #CACACA;
+}
+form{
+    margin-top: 30px;
+}
+
+.email,
+.password{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.form input ,
+.submit-button button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+}
+.submit-button button{
+    padding: 15px;
+}
+.form input{
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #CACACA;
+    padding: 0 15px;
+}
+
+
+.sign-up-link{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sign-up-link a{
+    text-decoration: none;
+    color: blue;
+}
+.sign-up-link a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+
+}
+.link1,
+.link2,
+.link3{
+    width: 20vw;
+    background-color: rgb(35, 29, 29);
+    display: inline-block;
+    color: white;
+    padding: 15px;
+}
+.link1 ul,
+.link2 ul,
+.link3 ul{
+    list-style: none;
+    
+}
+.link1 ul li a,
+.link2 ul li a,
+.link3 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.lower-footer{
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+}

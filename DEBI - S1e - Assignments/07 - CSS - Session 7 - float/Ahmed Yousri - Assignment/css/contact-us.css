@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    display: flow-root;
+    align-content: center;
+    height: 10vh;
+    background-color: rgb(255, 250, 244);
+}
+nav img{
+    float: left;
+    margin-left: 20px;
+}
+nav ul{
+    margin-right: 10vh;
+    align-content: center;
+}
+nav ul li{
+    float: right;
+    display: inline;
+    list-style: none;
+    margin-top: 10px;
+}
+nav ul li :hover{
+    background-color: aliceblue;
+}
+nav ul li a{
+    text-decoration: none;
+    background-color: antiquewhite;
+    margin: 0.5em;
+    border: 1px solid black;
+    color: black;
+    padding: 0.5em;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main{
+    background-color: antiquewhite;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.hero-class{
+    display: flex;
+    gap: 25vw;
+    padding-left: 10vw;
+
+}
+.contact-us h2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.contact-us p{
+    margin-bottom: 20px;
+}
+
+.main-img img{
+    height: 50vh;
+}
+
+.text img{
+    height: 4vh;
+}
+.text span{
+    color: green;
+}
+
+.location,
+.phone,
+.mail{
+    display: flex;
+    gap: 3vw;
+    margin-top: 30px;
+}
+
+.mail a{
+    text-decoration: none;
+    color: blue;
+}
+
+.mail a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+footer{
+    background-color: black;
+
+}
+.link1,
+.link2,
+.link3{
+    width: 20vw;
+    background-color: rgb(35, 29, 29);
+    display: inline-block;
+    color: white;
+    padding: 15px;
+}
+.link1 ul,
+.link2 ul,
+.link3 ul{
+    list-style: none;
+    
+}
+.link1 ul li a,
+.link2 ul li a,
+.link3 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.lower-footer{
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+}

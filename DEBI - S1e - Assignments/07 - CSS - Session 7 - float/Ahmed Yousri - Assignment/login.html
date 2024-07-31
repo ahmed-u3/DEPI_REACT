@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img src="./Challenge/imgs/logo.svg" alt="logo">
+            </a>
+            
+            <ul>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="./signup.html">Signup</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login">
+            <h2>
+                Login
+            </h2>
+            <br>
+            <hr>
+            <form action="">                
+                <div class="form email">
+                        <input 
+                        type="email" 
+                        placeholder="Email" 
+                        class="input"
+                        required
+                        name="email"
+                        >
+                </div>
+                <div class="form password">
+                    <input 
+                    type="password" 
+                    placeholder="Password" 
+                    class="input"
+                    minlength="6"
+                    pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}"
+                    title="make sure there's caps words and numbers in password with minlength of 6 characters"
+                    required
+                    name="password"
+                    >
+                </div>
+                <div class="submit-button">
+                    <button type="submit">
+                        Login
+                    </button>
+                </div>
+            </form>
+            <div class="sign-up-link">
+                <span>
+                    Don't have an account?
+                    <a href="./signup.html">Signup</a>
+                </span>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="lower-footer">
+        <div class="link1">
+            <h3>links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html">Signup</a></li>
+            </ul>
+        </div>
+        <div class="link2">
+            <h3>links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html">Signup</a></li>
+            </ul>
+        </div>
+        <div class="link3">
+            <h3>links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+</footer>
+</html>
