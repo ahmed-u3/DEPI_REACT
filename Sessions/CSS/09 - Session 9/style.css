@@ -11,13 +11,16 @@ section{
     border: 1px solid black;
     box-shadow: 2px 2px 2px 2px black;
     width: 80%;
-    margin: 0 auto;
+    transform: scale(1);
+
+    transition: ease-out 0.25s;
 }
 .photo{
     background-image: url(./img/login.jpg);
     color: white;
     width: 40%;
     height: auto;
+    
 }
 .about-me h2{
     font-size: 20px;
@@ -37,6 +40,9 @@ section{
 @media(width<900px){
     .blue-print{
         flex-direction: column;
+        transform: scale(0.9);
+
+        
     }
     .photo{
         width: 100%;
