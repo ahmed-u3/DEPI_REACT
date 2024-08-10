@@ -1,0 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+        "adds enews1 mainbg mainbg"
+        "adds enews2 mainbg mainbg"
+        "adds bottom1 bottom2 bottom3";
+}
+.main-img{
+    background-image: url("./imgs/main_img.png");
+    grid-area: mainbg;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.left-side-1{
+    grid-area: enews1;
+}
+.left-side-2{
+    grid-area: enews2;
+}
+.bottom-1{
+    grid-area: bottom1;
+}
+.bottom-2{
+    grid-area: bottom2;
+}
+.bottom-3{
+    grid-area: bottom3;
+}
+.adds{
+    grid-area: adds;
+}
