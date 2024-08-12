@@ -6,6 +6,7 @@
 }
 body{
     background-color: #F2F2F2;
+    overflow-x: hidden;
 }
 main{
     min-height: 220vh;
@@ -21,6 +22,7 @@ li,a,button{
     position: fixed;
     width: 100%;
     z-index: 1;
+    font-size: 80%;
 }
 header nav{
     display: flex;
@@ -224,6 +226,7 @@ main .grid-parent .news-5{
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
+    min-width: 60vh;
 }
 .top-image{
     display: flex;
@@ -269,7 +272,7 @@ main .grid-parent .news-5{
 }
 
 /*Mobile part*/
-@media(width<900px){
+@media(width<760px){
     
     /*Head and Navigation Part*/
     header nav{
@@ -298,12 +301,12 @@ main .grid-parent .news-5{
         width: 20vw;
         height: 30%;
     }
-
     /*Main Section*/
     main .grid-parent{
         display: flex;
         flex-direction: column;
         height: 130vh;
+        padding: 50px;
     }
     .grid-parent .grid-item{
         display: flex;
@@ -396,6 +399,7 @@ main .grid-parent .news-5{
         height: 100%;
         justify-content: initial;
         align-content: initial;
+        padding: 50px;
     } 
     .news-grid-parent .grid-items{
         width: 100%;
@@ -452,5 +456,140 @@ main .grid-parent .news-5{
         left: 0;
         padding: 0;
         padding-right: 1vw;
+    }
+
+    /*Footer part*/
+    .main-footer{
+        font-size: small;
+    }
+}
+
+@media(760px<width<1160px){
+        /*Head and Navigation Part*/
+        header nav{
+            justify-content: space-between;
+        }
+        header ul li{
+            display: none;
+        }
+    
+        main{
+            min-height: 290vh;
+            max-height: 500vh;
+        }
+        .left-nav-list{
+            margin-right: 0;
+        }
+        .search-button{
+            display: block;
+            border:none;
+        }
+        .logo{
+            margin-right: 15vw;
+        }
+    
+        .logo img{
+            width: 20vw;
+            height: 30%;
+        }
+    /*Main Section*/
+    main .grid-parent{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        height: 130vh;
+    }
+    .grid-parent .grid-item{
+        display: flex;
+        width: 100%;
+        height: 15vh;
+    }
+    main .grid-parent .news-1,
+    main .grid-parent .news-2,
+    main .grid-parent .news-3,
+    main .grid-parent .news-4,
+    main .grid-parent .news-5
+    {
+        background-image: none;
+        border: 1px solid black;
+        background-color: white;
+    }
+    .grid-item .img{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 20%;
+    }
+
+    .grid-parent .news-1 .img {
+        background-image: url("../imgs/news1.jpg");
+    }
+    
+    .grid-parent .news-2 .img {
+        background-image: url("../imgs/news2.jpg");
+    }
+    
+    .grid-parent .news-3 .img {
+        background-image: url("../imgs/news3.jpg");
+    }
+    
+    .grid-parent .news-4 .img {
+        background-image: url("../imgs/news4.jpg");
+    }
+    
+    .grid-parent .news-5 .img {
+        background-image: url("../imgs/news5.jpg");
+    }
+
+    .grid-item .sec-name{
+        width: 80%;
+        font-size:15px;
+        color: #0277bd;
+        padding-right: 1vw;
+        font-weight: bold;
+        background-color: white;
+    }
+    .grid-item .description{
+        position: absolute;
+        width: 80%;
+        font-size:20px;
+        height: auto;
+        left: 0;
+        padding-right: 1vw;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+    .grid-parent .main-news {
+        display: block;
+        min-height: 20rem;
+        width: 100%;
+    }
+    .main-news .description{
+        background-color: black;
+        font-size: 1.5rem;
+        right: 0;
+        width: 100%;
+        color: white;
+    }
+    .main-news .sec-name{
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+        right: 0;
+    }
+
+
+    /*News part*/
+    .news-grid-parent{
+        grid-template-areas: 
+        "small-news3 small-news2 small-news1"
+        "small-news6 small-news5 small-news4"
+        "small-news9 small-news8 small-news7"
+        "small-news12 small-news11 small-news10";
+    }
+    /*Footer part*/
+    .main-footer{
+        font-size: small;
     }
 }
