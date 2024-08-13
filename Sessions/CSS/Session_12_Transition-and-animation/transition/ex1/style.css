@@ -1,0 +1,18 @@
+:root {
+  --main-color: black;
+  --sec-color: white;
+  --mid-color: rgb(72, 223, 72);
+  /* --main-color: white;
+  --sec-color: black;
+  --mid-color: rgb(72, 223, 72); */
+}
+
+.hero {
+  background-color: var(--sec-color);
+  border: 5px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.hero button {
+  background-color: var(--mid-color);
+}

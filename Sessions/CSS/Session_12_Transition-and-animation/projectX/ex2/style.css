@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: -120px;
+  z-index: 100;
+  animation: headerAnim linear forwards;
+  animation-timeline: scroll();
+  animation-range-start: 40vh;
+  animation-range-end: 80vh;
+}
+
+@keyframes headerAnim {
+  to {
+    top: 0px;
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(7px);
+  }
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul a {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+}
+
+footer {
+  background-color: black;
+  height: 10vh;
+
+  text-align: center;
+  color: white;
+}
+
+/* ******************************* */
+
+.sec {
+  height: 100vh;
+  border: 3px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  display: grid;
+  place-content: center;
+}
+
+.hero img {
+  height: 500px;
+}
+
+/* bar */
+.bar {
+  background-color: red;
+  height: 10px;
+  position: fixed;
+  top: calc(100% - 10px);
+  left: 0;
+  right: 0;
+  transform-origin: left;
+  scale: 0 1;
+
+  animation: barAnim linear forwards;
+  animation-timeline: scroll();
+}
+
+@keyframes barAnim {
+  to {
+    scale: 1 1;
+  }
+}

@@ -469,7 +469,7 @@ main .grid-parent .news-5{
         header nav{
             justify-content: space-between;
         }
-        header ul li{
+                header ul li {
             display: none;
         }
     
