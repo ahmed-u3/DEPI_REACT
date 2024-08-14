@@ -34,6 +34,7 @@ header ul li{
     list-style: none;
     display: inline-block;
     padding: 0.5rem;
+    transition: background-color 0.7s ease;
 }
 header ul li ,#header-country-select {
     border-radius: 25px;
@@ -59,11 +60,43 @@ header ul li:not(.header-country-select){
     display: flex;
     column-gap: 5rem;
 }
+.hero-img{
+    position: relative;
+}
+
 .hero-section img{
     width: 100%;
     height: auto;
-    /* padding: 10px; */
+    transition: transform 0.3s ease;
 }
+.img1::after{
+    content: "Figma Doodle Socks";
+}
+.img2::after{
+    content: "Chunky Glyph Tee";
+}
+.img3::after{
+    content: "Chunky Glyph Longsleeve";
+}
+.hero-img::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero-img:hover::after {
+    opacity: 1;
+}
+
 .img1 img{
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
@@ -99,12 +132,14 @@ header ul li:not(.header-country-select){
 .text h2 span {
     display: inline-block;
     font-size: 50px;
+    transition: color 0.8s ease-in-out;
 }
 .text h2 span a{
     text-decoration: underline;
     color: black;
+    
 }
-.text:hover span:not(a){
+.text:hover h2 span:not(a){
     color: rgba(0, 0, 0, 0.5);
 }
 .text h2 span:nth-child(1):after {
@@ -166,14 +201,31 @@ header ul li:not(.header-country-select){
 .grid-item {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .grid-item img{
     width: 100%;
-    height: 90%;
+    height: 80%;
     border: 0px solid ;
     border-radius: 10%;
     object-fit: cover;
+}
+/*---------------- Image Animation Part ------------------------*/
+.grid-item img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: 10%;
+    object-fit: fill;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+.grid-item img.hover-image:hover{
+    opacity: 1;
+    border: 4px solid black;
 }
 
 .grid-item .text{
@@ -249,8 +301,26 @@ header ul li:not(.header-country-select){
     list-style: none;
     color: black;
     display: inline-block;
+    position: relative;
+    text-decoration: none;
 }
-.main-footer a:hover{
+.main-footer a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: black; 
+    opacity: 0; /* Hide the underline */
+    /*We can use transform also*/
+    /*transform: scaleX(0)*/
+    transition: opacity 0.3s ease-in-out;
+}
+.main-footer a:hover::after{
+    /*We can use transform also*/
+    /*transform: scaleX(1)*/
+    opacity: 1;
     text-decoration: underline;
 }
 .top-footer-list{
@@ -266,7 +336,6 @@ header ul li:not(.header-country-select){
     color: black;
     padding: .8rem;
     cursor: default;
-    
 }
 .top-footer-list li :not(a){
     list-style: none;
@@ -283,6 +352,10 @@ header ul li:not(.header-country-select){
 .top-footer-list li p{
     display: block;
     
+}
+.top-footer-list li b:hover{
+    color: blue;
+    cursor: pointer;
 }
 .top-footer-list li img{
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
