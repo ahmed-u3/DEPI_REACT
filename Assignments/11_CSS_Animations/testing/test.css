@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.bar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #3498db; /* Initial color */
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.content {
+    padding-top: 60px; /* Adjust based on the height of the bar */
+    height: 2000px; /* Ensure there is enough content to scroll */
+    position: relative;
+}
+
+.content::before {
+    content: '';
+    display: block;
+    height: 100px; /* Adjust to the height when color change happens */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e74c3c; /* Color when scrolled */
+    z-index: -1;
+}
+
+.content {
+    background-color: #fff; /* Background color of the content */
+}
