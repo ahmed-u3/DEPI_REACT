@@ -33,7 +33,7 @@ header nav{
 header ul li{
     list-style: none;
     display: inline-block;
-    padding: 0.5rem;
+    padding: 0.6rem;
     transition: background-color 0.7s ease;
 }
 header ul li ,#header-country-select {
@@ -48,7 +48,9 @@ header ul li:not(.header-country-select):hover{
 header ul li:not(.header-country-select){
     border: 2px solid black;
 }
-
+#menu-button{
+    display: none;
+}
 /*---------------Header END-------------------------*/
 
 /*---------------Main Part--------------------------*/
@@ -195,8 +197,10 @@ header ul li:not(.header-country-select){
     " item5 item6 item7 item7"
     " item8 item8 item7 item7"
     " item8 item8 item9 item10";
-    height: 350vh;
+    min-height: 350vh;
     padding: 10rem;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
 }
 .grid-item {
     display: flex;
@@ -325,7 +329,7 @@ header ul li:not(.header-country-select){
 }
 .top-footer-list{
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     column-gap: 5rem;
     height: 70%;
@@ -351,7 +355,6 @@ header ul li:not(.header-country-select){
 
 .top-footer-list li p{
     display: block;
-    
 }
 .top-footer-list li b:hover{
     color: blue;
@@ -374,3 +377,146 @@ header ul li:not(.header-country-select){
     font-size: 20px;
 }
 /* -------------------------- END Footer ------------------- */
+
+
+/*------------------ Mobile Phone Part ---------------------------------------*/
+@media(width<768px){
+    /*---------------------------------- Header and Nav ------------------*/
+    .menu-button,
+    #menu-button{
+        display: inline-block;
+    }
+    .menu-button{
+        cursor: pointer;
+    }
+    .menu-button div{
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        margin: 1px 0px;
+    }
+    #menu-button:hover .menu-button div{
+        background-color: white;
+    }
+    .left-list ul li:nth-child(2),
+    .left-list ul li:nth-child(3)
+    {
+        display: none;
+    }
+    .right-list ul li:nth-child(2),
+    .left-list ul li:nth-child(3)
+    {
+        display: none;
+    }
+    /*------------------------- End Header and Nav ---------------------*/
+    .text h2 span{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .text h2 span:nth-child(1):after,
+    .text h2 span:nth-child(2):after,
+    .text h2 span:nth-child(4):after,
+    .text h2 span:nth-child(5):after,
+    .text h2 span:nth-child(6):after,
+    .text h2 span:nth-child(8):after,
+    .text h2 span:nth-child(9):after,
+    .text h2 span:nth-child(10):after
+    {
+        display: inline-block;
+        height: auto; 
+        transform: scale(0.7); 
+    }
+        /*------------------ Hero Section -------------------*/
+        .hero-section{
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-section img{
+            height: 50dvh;
+        }
+        .hero-section .img1,
+        .hero-section .img2
+        {
+            display: none;
+        }
+        /*------------------- Store list Section ----------------------*/
+        .grid-parent{
+            grid-template-columns: (2, 8fr);
+            grid-template-areas: 
+            " item1 item2"
+            " item3 item4"
+            " item5 item6"
+            " item7 item7"
+            " item8 item8"
+            " item9 item10";
+            transform: scale(0.8);
+            transition: 0.3s ease-in-out;
+        }
+        /*------------------ Footer ----------------------------------*/
+        .main-footer{
+            min-height: 100dvh;
+        }
+        .top-footer-list li img{
+            width: 60%;
+        }
+        .top-footer-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
+
+@media(768px<width<1090px){
+    .menu-button,
+    #menu-button{
+        display: inline-block;
+    }
+    .menu-button{
+        cursor: pointer;
+    }
+    .menu-button div{
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        margin: 1px 0px;
+    }
+    #menu-button:hover .menu-button div{
+        background-color: white;
+    }
+    .left-list ul li:nth-child(2),
+    .left-list ul li:nth-child(3)
+    {
+        display: none;
+    }
+    .right-list ul li:nth-child(2),
+    .left-list ul li:nth-child(3)
+    {
+        display: none;
+    }
+    /*------------------------- End Header and Nav ---------------------*/
+    /*------------------- Store list Section ----------------------*/
+    .text h2 span{
+        margin-top: 20px;
+    }
+            .grid-parent{
+                grid-template-columns: (3, 8fr);
+                grid-template-areas: 
+                " item1 item2 item3"
+                "item4 item5 item6"
+                " item7 item7 item7"
+                " item8 item9 item10";
+                transform: scale(0.9);
+                transition: 0.3s ease-in-out;
+            }
+                    /*------------------ Footer ----------------------------------*/
+        .main-footer{
+            min-height: 100dvh;
+        }
+        .top-footer-list li img{
+            width: 60%;
+        }
+        .top-footer-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
