@@ -1,0 +1,22 @@
+-- String
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+-- Truthy Falsy Values
+https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+
+ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+-- Functions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
+- normal
+- arrow
+- iife
+
+ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+-- Scope
+
+ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+-- Hoisting

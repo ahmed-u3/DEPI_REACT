@@ -1,0 +1,48 @@
+let day = 1
+===> Problem: Weekdays Validation
+Description:
+Given a variable day with a value between 1 and 7, represent the days of the week as follows:
+1: Saturday
+2: Sunday
+3: Monday
+4: Tuesday
+5: Wednesday
+6: Thursday
+7: Friday
+Use if statements to check the value of day and print the corresponding day of the week.
+If day is not between 1 and 7, print ${day} not a day.
+
+-------------------------------------------------------
+
+===> Problem: Random Number Selection and Validation
+Description:
+1-Choose a random number between 1 and 5 (inclusive).
+2- Store a target number that you want to check against.
+3- If the randomly chosen number matches the target number, print "Winner".
+4- If the randomly chosen number does not match the target number, print "Try again".
+
+
+
+let str = "racecar";
+===> Problem: Palindrome Check
+Description:
+1- Given a variable str containing a string, check if the string is a palindrome. A palindrome is a string that reads the same forward and backward.
+2- Use if statements to compare the original string with its reversed version.
+3- Print a message indicating whether the string is a palindrome or not.
+
+-------------------------------------------------------
+let sentence = "This is a test sentence with multiple words.";
+===> Problem: Count Words in a Sentence
+Description:
+1- Given a variable sentence containing a string, count the number of words in the string.
+2- Use if statements to check if the number of words is greater than 5.
+3- Print a message indicating whether the sentence has more than 5 words or 5 or fewer words.
+
+-------------------------------------------------------
+let fullString = "This is a longer string.";
+let substring = "longer";
+===> Problem: Check for Substring Presence
+Description:
+Given a variable fullString containing a string and a variable substring containing a substring, check if the substring is present in the fullString.
+Use if statements to determine if fullString contains substring.
+Print a message indicating whether the substring is found within the full string or not.

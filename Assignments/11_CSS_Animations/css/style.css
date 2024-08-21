@@ -205,7 +205,8 @@ header ul li:not(.header-country-select){
 }
 .grid-item {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     position: relative;
 }
 
@@ -226,7 +227,7 @@ header ul li:not(.header-country-select){
     border-radius: 10%;
     object-fit: fill;
     opacity: 0;
-    transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 .grid-item img.hover-image:hover{
     opacity: 1;
@@ -236,6 +237,7 @@ header ul li:not(.header-country-select){
 .grid-item .text{
     display: flex;
     width: 100%;
+    margin-top: 3vh;
 }
 .grid-item .text p{
     margin-right: auto;
@@ -444,6 +446,7 @@ header ul li:not(.header-country-select){
         /*------------------- Store list Section ----------------------*/
         .grid-parent{
             grid-template-columns: (2, 8fr);
+            grid-auto-rows: auto ;
             grid-template-areas: 
             " item1 item2"
             " item3 item4"
