@@ -1,0 +1,147 @@
+1--
+Write a function that takes a string and returns the first character of the string.
+
+function firstChar(str) {
+    // Write the function here
+}
+
+// Example call
+console.log(firstChar("Hello")); // Should print "H
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+3--
+Write a function that takes a string and returns the same string after removing all spaces.
+
+
+function removeSpaces(str) {
+    // Write the function here
+}
+
+// Example call
+console.log(removeSpaces("Hello World")); // Should print "HelloWorld"
+
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+
+4--
+Write a function that takes two numbers and returns their sum.
+
+
+function sum(a, b) {
+    // Write the function here
+}
+
+// Example call
+console.log(sum(3, 5)); // Should print 8
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+5--
+Write a function called `shortenIfTooLong` that takes a sentence as input.
+If the sentence contains more than 19 characters, the function should cut the sentence 
+to the first 19 characters and add "... read more" at the end. 
+If the sentence contains 19 characters or less, it should return the sentence as is.
+
+function shortenIfTooLong(sentence) {
+    // Write the function here
+}
+
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+
+-- 5
+Write a function that takes a number and returns its square.
+
+
+function square(num) {
+    // Write the function here
+}
+
+// Example call
+console.log(square(4)); // Should print 16
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+--6
+function reverseString(str) {
+    // Write the function here
+}
+
+// Example call
+console.log(reverseString("hello")); // Should print "olleh"
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+--7
+Write an arrow function that takes a string and returns its length.
+
+
+const stringLength = (str) => {
+    // Write the function here
+}
+
+// Example call
+console.log(stringLength("Hello")); // Should print 5
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+--8
+
+
+Write an arrow function that takes two numbers and returns the larger number.
+
+
+const maxNumber = (a, b) => {
+    // Write the function here
+}
+
+// Example call
+console.log(maxNumber(3, 9)); // Should print 9
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+
+--9
+Write a function that takes a number and returns it multiplied by 2. Make sure to use a variable inside the function only.
+
+function double(num) {
+    // Write the function here
+}
+
+// Example call
+console.log(double(4)); // Should print 8
+
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+
+--10
+Write a function that uses a local variable and a global variable to add two numbers.
+
+let globalNum = 5;
+
+function sumWithGlobal(num) {
+    // Write the function here
+}
+
+// Example call
+console.log(sumWithGlobal(3)); // Should print 8
+
+
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+
+-- 11
+
+Write a function that prints the value of a variable before and after it is initialized inside the function. Notice the behavior due to variable hoisting.
+
+
+function hoistingFunctionExample() {
+    // Write the function here
+}
+
+// Call the function
+hoistingFunctionExample(); // Should print "Hoisted"
