@@ -1,0 +1,54 @@
+
+////////////////////// Problem 1
+
+// input:
+multi(5, 1, 2, 3, 4, 5)
+
+// output
+[5,10,15,20,25]
+
+
+
+//////////////////// problem 2
+
+
+//input:
+
+const api = {
+  userDetails: {
+    id: 123,
+    personalInfo: {
+      name: "Ali",
+      bdate: {
+        year: 1990,
+        month: "June",
+        day: 15,
+      },
+    },
+  },
+  preferences: {
+    theme: "dark",
+    notifications: {
+      email: true,
+      sms: false,
+    },
+  },
+  settings: {
+    privacy: {
+      tracking: false,
+      ads: true,
+    },
+  },
+};
+
+// output
+
+console.log(name); // "Ali"
+console.log(year); // 1990
+console.log(month); // "June"
+console.log(day); // 15
+console.log(theme); // "dark"
+console.log(email); // true
+console.log(sms); // false
+console.log(tracking); // false
+console.log(ads); // true
