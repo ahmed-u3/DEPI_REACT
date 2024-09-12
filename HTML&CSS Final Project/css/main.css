@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li,a,button{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*---------------Header and Nav Part---------------------*/
+
+
+header nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    justify-content:space-between; 
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    width: 90%;
+    font-size: large;
+    font-weight: bold;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.6rem;
+    transition: background-color 0.7s ease;
+}
+header ul .right-button{
+    margin-left: auto;
+}
+header nav button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: blue;
+    color: white;
+    font-size: larger;
+}
+.logo-img{
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+/*-------------------------End of Nav and header part ------------------------*/
+/*-------------------------Start of Hero Section------------------------------*/
+main{
+    margin-top: 10%;
+    position: relative;
+}
+
+.hero-section{
+    padding: 10vh 0;
+    width: 90%;
+    margin: auto;
+}
+
+.hero-grid{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: center; */
+    /* justify-content: center; */
+    /* gap: 20vw; */
+    /* width: fit-content; */
+    /* margin:0 auto; */
+}
+
+.background-img img{
+    z-index: -2;
+    position:absolute;
+    left: -10%;
+    width: 20%;
+    height: 40%;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    font-size: 1.5rem;
+    position: relative;
+}
+.hero-video video{
+    width: 120%;
+    border-radius: 50px;
+
+}
+
+.arrow{
+    position: absolute;
+    bottom: -42%;
+    left: 30%;
+}
+
+.highlight-color-3,.highlight-color-4,.highlight-color-5{
+    position: relative;
+}
+.highlight-shape{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.hero-buttons{
+    position: absolute;
+    display: flex;
+    gap: 3vw;
+    bottom: 0;
+    left: 10%;
+}
+
+.hero-buttons button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    font-size: larger;
+}
+
+/*----------------------------------End of Main section----------------------------------*/
+/*-----------------------------------Start of partnership section------------------------*/
+.partnership{
+    margin-top: 40vh;
+    width: 80%;
+}
+.partnership p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.slider-track img{
+    
+}
+
+.slider-container{
+    width: 100%;
+    overflow: hidden;
+}
+/*-----------------------------------End of partnership section------------------------*/
