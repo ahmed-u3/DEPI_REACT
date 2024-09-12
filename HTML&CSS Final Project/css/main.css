@@ -7,7 +7,9 @@ li,a,button{
     text-decoration: none;
     cursor: pointer;
 }
-
+body{
+    overflow-x: hidden;
+}
 /*---------------Header and Nav Part---------------------*/
 
 
@@ -139,7 +141,7 @@ main{
 /*----------------------------------End of Main section----------------------------------*/
 /*-----------------------------------Start of slider partnership section------------------------*/
 .slider-partnership{
-    margin-top: 40vh;
+    margin-top: 10vh;
     width: 100%;
 }
 .slider-partnership p{
@@ -263,7 +265,45 @@ main{
     font-size: 1rem;
     line-height: 1.5;
 }
-
-
-
 /*-------------------------------------End of What we do section ----------------------*/
+/*-------------------------------------Start of Ads section ---------------------------*/
+.ads-section{
+    background: linear-gradient(90deg, #0d1936, #14264f);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+.ads {
+    text-align: center;
+    color: #fff;
+}
+
+.ads h2 {
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+
+.ads p {
+    margin-bottom: 2vh;
+    font-size: 1rem;
+}
+.ads-button {
+    background-color: #ffcc32;
+    color: #000;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+.ads-arrow img{
+    position: absolute;
+    right: 24%;
+    bottom: 0;
+}
+
+/*-------------------------------------End of Ads section ---------------------------*/
+
