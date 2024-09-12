@@ -17,7 +17,7 @@ header nav{
     padding: 10px 5%;
     justify-content:space-between; 
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     background-color: white;
     top: 0;
@@ -49,6 +49,11 @@ header nav button{
     background-color: blue;
     color: white;
     font-size: larger;
+    box-shadow: 0px black;
+    transition: box-shadow 0.7s ease;
+}
+header nav button:hover{
+    box-shadow: 2px 2px 4px black;
 }
 .logo-img{
     display: inline-block;
@@ -101,8 +106,10 @@ main{
 
 .arrow{
     position: absolute;
-    bottom: -42%;
-    left: 30%;
+    bottom: -35%;
+    left: 35%;
+    transform: rotate(10deg);
+    z-index: -1;
 }
 
 .highlight-color-3,.highlight-color-4,.highlight-color-5{
@@ -130,12 +137,12 @@ main{
 }
 
 /*----------------------------------End of Main section----------------------------------*/
-/*-----------------------------------Start of partnership section------------------------*/
-.partnership{
+/*-----------------------------------Start of slider partnership section------------------------*/
+.slider-partnership{
     margin-top: 40vh;
     width: 100%;
 }
-.partnership p{
+.slider-partnership p{
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -155,7 +162,7 @@ main{
     height: 100%;
     width: 10%;
     content: "";
-    z-index: 2;
+    z-index: 1;
 }
 .slider-container:before{
     left: 0;
@@ -171,7 +178,7 @@ main{
 }
 .slider-track{
     display: inline-block;
-    animation: 20s slide infinite linear;
+    animation: 50s slide infinite linear;
 }
 
 
@@ -185,3 +192,78 @@ main{
     }
 }
 /*-----------------------------------End of partnership section------------------------*/
+
+/*-------------------------------------Start of What we do section --------------------*/
+.what-we-do {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.what-we-do h3{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.what-we-do p#what-we-paragraph{
+    text-align: center;
+}
+
+/* container */
+.what-we-do-list {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.what-we-do-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:20px ;
+}
+.tab{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: white;
+    border: 3px solid black;
+    transition: background-color 0.7s ease , box-shadow 0.5s ease;
+    text-align: left;
+    width: 30%;
+    display: flex;
+}
+.tab span{
+    margin-left: auto;
+}
+
+.tab.active {
+    background-color: #5b00f7;
+    color: #fff;
+}
+.tab:hover:not(.tab.active) {
+    background-color: #955cf8;
+    color: white;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.service {
+    padding: 20px;
+}
+.service h4 {
+    font-size: 1.25rem;
+    margin-bottom: 2vh;
+}
+
+.service p {
+    color: gray;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+/*-------------------------------------End of What we do section ----------------------*/
