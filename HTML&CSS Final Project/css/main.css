@@ -146,6 +146,24 @@ main{
     overflow: hidden;
     padding: 60px 0;
     white-space: nowrap;
+    position: relative;
+}
+
+.slider-container:before,.slider-container:after{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 10%;
+    content: "";
+    z-index: 2;
+}
+.slider-container:before{
+    left: 0;
+    background: linear-gradient(to left,rgba(255, 255, 255, 0),white);
+}
+.slider-container:after{
+    right: 0;
+    background: linear-gradient(to right,rgba(255, 255, 255, 0),white);
 }
 .slider-track img{
     height: 40px;
