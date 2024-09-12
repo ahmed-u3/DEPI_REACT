@@ -97,7 +97,6 @@ main{
 .hero-video video{
     width: 120%;
     border-radius: 50px;
-
 }
 
 .arrow{
@@ -134,19 +133,37 @@ main{
 /*-----------------------------------Start of partnership section------------------------*/
 .partnership{
     margin-top: 40vh;
-    width: 80%;
+    width: 100%;
 }
 .partnership p{
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
 }
+.slider-container{
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+}
 .slider-track img{
-    
+    height: 40px;
+    margin: 0 40px;
+}
+.slider-track{
+    display: inline-block;
+    animation: 20s slide infinite linear;
 }
 
-.slider-container{
-    width: 100%;
-    overflow: hidden;
+
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
 /*-----------------------------------End of partnership section------------------------*/
