@@ -45,6 +45,9 @@ header ul li{
 header ul .right-button{
     margin-left: auto;
 }
+.ham-button{
+    display: none;
+}
 header nav button{
     padding: 10px 20px;
     border-radius: 5px;
@@ -81,11 +84,6 @@ main{
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* justify-content: center; */
-    /* justify-content: center; */
-    /* gap: 20vw; */
-    /* width: fit-content; */
-    /* margin:0 auto; */
 }
 
 .background-img img{
@@ -412,6 +410,11 @@ main{
     display: inline-flex;
     align-items: center;
 }
+.partner-ship-button button:hover{
+    border-radius: 100px;
+    background-color: white;
+    color: #955cf8;
+}
 .process .step:not(.active){
     background-color: #955cf8;
     color: white;
@@ -421,7 +424,7 @@ main{
 }
 /*-------------------------------------End of partnership section -----------------*/
 
-/* General Footer Styling */
+/*-----------------------------------------Start of Footer------------------------ */
 .footer {
     background-color: #0b1c2c;
     color: #ffffff;
@@ -496,7 +499,6 @@ main{
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-top: 30px;
     border-top: 1px solid #2a3d54;
@@ -560,4 +562,95 @@ main{
 .footer-copyright {
     font-size: 0.9rem;
     color: #ffffff;
+    margin-left: auto;
+}
+
+/*-----------------------------------------End of Footer------------------------ */
+
+/*----------------------------------------Tablet Mode----------------------------*/
+
+@media(width<1100px)
+{
+    /*-------Header-------------*/
+    header ul li{
+        display: none;
+    }
+    .ham-button{
+        display: flex;
+        margin-left: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ham-button img{
+        margin-left:10px ;
+    }
+    .ham-button button{
+        background-color: white;
+        color: black;
+        border: none;
+    }
+    header nav button:hover{
+        box-shadow: none;
+    }
+    /*----------Hero-----------*/
+    .hero-grid{
+        flex-direction: column;
+        width: 90%;
+    }
+    .hero-text{
+        gap: 5vh;
+        font-size: 1.2rem;
+    }
+    .hero-video video{
+        width: 100%;
+    }
+    .hero-buttons{
+        position: relative;
+        display: flex;
+        gap: 3vw;
+        bottom: 0;
+        left: 10%;
+        margin-bottom: 10dvh;
+    }
+    .arrow{
+        display: none;
+    }
+    .background-img img{
+        z-index: -2;
+        position:absolute;
+        left: -10%;
+        width: 20%;
+        height: 20%;
+    }
+
+    /*-------------Ads---------*/
+    .ads-arrow img{
+        display: none;
+    }
+    /*----------Partnership-------*/
+    .process .step:not(.active){
+        display: none;
+    }
+    .tab.active{
+        width: 100%;
+    }
+    .tab:not(.active) {
+        display: none;
+    }
+    /*---------------footer---------*/
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-buttons {
+        margin-bottom: 10%;
+    }
+    .footer-links a{
+        font-size: small;
+        margin: 0 1px;
+    }
+    .footer-copyright{
+        font-size: small;
+    }
 }
