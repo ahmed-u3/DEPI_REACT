@@ -389,6 +389,9 @@ header ul li:not(.header-country-select){
     #menu-button{
         display: inline-block;
     }
+    header ul li{
+        padding: 0.6rem;
+    }
     .menu-button{
         cursor: pointer;
     }
