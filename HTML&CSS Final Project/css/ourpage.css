@@ -71,6 +71,43 @@ header nav button:hover{
     width: auto;
     height: auto;
 }
+/*-----------drop down menu -----------------------*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 50vw;
+}
+.dropdown-content img{
+    width: 20%;
+}
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap:1vh;
+}
+
+.dropdown-content h2 {
+    font-size: 16px; 
+}
+
+.dropdown-content p {
+    font-size: 15px; 
+    font-weight: normal;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
 
 /*-------------------------End of Nav and header part ------------------------*/
 /*-------------------------Start of Hero Section------------------------------*/
@@ -125,7 +162,7 @@ main{
     color: white;
 }
 
-.hero-buttons :first-child{
+.hero-buttons > button{
     background-color: blue;
     color: white;
 }
