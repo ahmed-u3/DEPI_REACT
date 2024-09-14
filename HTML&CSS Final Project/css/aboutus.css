@@ -109,3 +109,397 @@ header nav button:hover{
     display: flex;
 }
 /*-------------------------End of Nav and header part ------------------------*/
+
+/*-----------------------------Start of hero section--------------------------*/
+.hero-section{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 2vh;
+}
+.hero-section h2{
+    margin-top: 5%;
+    font-size: 100px;
+}
+.hero-buttons{
+    display: flex;
+    gap: 5vh;
+    margin-top: 2vh;
+}
+.hero-buttons button:first-child{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: blue;
+    color: white;
+    font-size: larger;
+    transition: box-shadow 0.7s ease;
+}
+.hero-buttons button:last-child{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: larger;
+    transition: box-shadow 0.7s ease;
+}
+.hero-buttons button:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 5px 5px 4px black;
+}
+/*---------------End of hero section ------------------*/
+
+/*-----------------------Start of who we are -----------*/
+.who-we-are{
+    display: flex;
+    gap: 5vw;
+    padding: 5rem;
+}
+.who-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 50%;
+}
+.who-img{
+    position: relative;
+    background-image: url("../imgs/who-we-are/dots.webp");
+    background-size: cover;
+    font-size: 40px;
+    width: 60%;
+}
+
+.who-text h2{
+    font-size: 30px;
+}
+.who-img p{
+    margin-top: 5%;
+    padding: 20px;
+}
+.who-img img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*------------------------------------------------------------------End of who we are ---------------------------------------------------*/
+/*-------------------------------------------------------------------------Start of team members -----------------------------*/
+.the-team h2{
+text-align: center;
+font-size: 40px;
+}
+.member-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.member-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;;
+}
+.member-img img:hover{
+    transform: scale(1.1);
+}
+.members{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh ;
+}
+.team-container{
+    display: grid;
+    gap: 2vw;
+    grid-template-areas: 
+    "member1 member2 member3"
+    "member4 member5 member6";
+    padding: 4rem;
+}
+.member-text h4{
+    font-size: 20px;
+}
+
+/*-------------------------------------------------------------------------End of team members -----------------------------*/
+/* -------------------------------------------------------------------Start of footer ------------------------------------- */
+.footer {
+    background-color: #0b1c2c;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a:hover {
+    color: #08c;
+}
+
+/* Footer Logo and Contact */
+.footer-logo {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1);
+}
+
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 0px;
+    border-top: 1px solid #2a3d54;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.project-calculator, .discuss-project {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-calculator {
+    background-color: #ffffff;
+    color: #0b1c2c;
+    transition: background-color 0.3s ease;
+}
+.project-calculator:hover{
+    background-color: #5b00f7;
+    color: white;
+}
+.discuss-project {
+    background-color: #ffcc00;
+    color: #0b1c2c;
+    transition: background-color 0.3s ease;
+}
+.discuss-project:hover{
+    background-color: #ac8a03;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #955cf8;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+
+.footer-copyright {
+    font-size: 0.9rem;
+    color: #ffffff;
+    
+}
+/* -------------------------------------------------------------------End of footer ------------------------------------- */
+/*----------------------------------------Tablet or mobile Mode----------------------------*/
+
+@media(950px<width<1200px)
+{
+        /*-------Header-------------*/
+        header ul li:not(.ham-button){
+            display: none;
+        }
+        .ham-button{
+            display: flex;
+            margin-left: auto;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ham-button img{
+            margin-left:10px ;
+        }
+        .ham-button button{
+            background-color: white;
+            color: black;
+            border: none;
+        }
+        header nav button:hover{
+            box-shadow: none;
+        }
+        /*-------main----------*/
+        .hero-flex{
+            flex-direction: column;
+        }
+    /*-------------Ads---------*/
+    .ads-arrow img{
+        display: none;
+    }
+}
+
+@media(650px<width<950px)
+{
+        /*-------Header-------------*/
+        header ul li:not(.ham-button){
+            display: none;
+        }
+        .ham-button{
+            display: flex;
+            margin-left: auto;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ham-button img{
+            margin-left:10px ;
+        }
+        .ham-button button{
+            background-color: white;
+            color: black;
+            border: none;
+        }
+        header nav button:hover{
+            box-shadow: none;
+        }
+        .team-container{
+            grid-template-areas: 
+            "member1 member2"
+            "member3 member4"
+            "member5 member6";
+        }
+    /*---------------footer---------*/
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-buttons {
+        margin-bottom: 10%;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer-links a{
+        margin:  1px;
+    }
+}
+@media(width<650px)
+{
+        /*-------Header-------------*/
+        header ul li:not(.ham-button){
+            display: none;
+        }
+        .ham-button{
+            display: flex;
+            margin-left: auto;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ham-button img{
+            margin-left:10px ;
+        }
+        .ham-button button{
+            background-color: white;
+            color: black;
+            border: none;
+        }
+        header nav button:hover{
+            box-shadow: none;
+        }
+        .hero-flex{
+            flex-direction: column;
+        }
+        .who-we-are{
+            flex-direction: column;
+        }
+        .team-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-section{
+            margin-top: 30%;
+        }
+        .hero-section p{
+            width: 50%;
+        }
+            /*---------------footer---------*/
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-buttons {
+        margin-bottom: 10%;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer-links a{
+        margin:  1px;
+    }
+}
