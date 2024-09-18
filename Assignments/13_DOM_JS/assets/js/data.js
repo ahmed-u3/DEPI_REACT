@@ -13,7 +13,12 @@ const movies = [
     { id: 12, name: "The Room", price: 2.99, rating: 2.5 },
     { id: 13, name: "Star Wars: The Phantom Menace", price: 5.29, rating: 3.3 },
     { id: 14, name: "Batman & Robin", price: 3.99, rating: 2.8 },
-    { id: 15, name: "The Happening", price: 3.49, rating: 2.7 }
+    { id: 15, name: "The Happening", price: 3.49, rating: 2.7 },
+    { id: 16, name: "Gigli", price: 3.99, rating: 2.4 },
+    { id: 17, name: "Cats", price: 4.49, rating: 2.7 },
+    { id: 18, name: "Justice League", price: 5.99, rating: 3.8 },
+    { id: 19, name: "Venom", price: 4.99, rating: 3.5 },
+    { id: 20, name: "Jupiter Ascending", price: 3.49, rating: 3.1 }
 ];
 
 export default movies
