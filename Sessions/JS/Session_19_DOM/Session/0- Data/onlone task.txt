@@ -1,0 +1,65 @@
+const employees = [
+  {
+    id: 1,
+    name: "Ahmed Ali",
+    age: 34,
+    title: "Software Engineer",
+    department: "IT",
+    yearsOfExperience: 10,
+    email: "ahmed.ali@example.com"
+  },
+  {
+    id: 2,
+    name: "Mona Hassan",
+    age: 29,
+    title: "Marketing Specialist",
+    department: "Marketing",
+    yearsOfExperience: 5,
+    email: "mona.hassan@example.com"
+  },
+  {
+    id: 3,
+    name: "Omar Saeed",
+    age: 40,
+    title: "Project Manager",
+    department: "Operations",
+    yearsOfExperience: 15,
+    email: "omar.saeed@example.com"
+  },
+  {
+    id: 4,
+    name: "Sara Mohamed",
+    age: 26,
+    title: "Graphic Designer",
+    department: "Design",
+    yearsOfExperience: 4,
+    email: "sara.mohamed@example.com"
+  },
+  {
+    id: 5,
+    name: "Khaled Mahmoud",
+    age: 38,
+    title: "Human Resources Manager",
+    department: "HR",
+    yearsOfExperience: 12,
+    email: "khaled.mahmoud@example.com"
+  },
+  {
+    id: 6,
+    name: "Layla Fathy",
+    age: 32,
+    title: "Data Analyst",
+    department: "Data Science",
+    yearsOfExperience: 7,
+    email: "layla.fathy@example.com"
+  },
+  {
+    id: 7,
+    name: "Youssef El-Shazly",
+    age: 45,
+    title: "Chief Financial Officer (CFO)",
+    department: "Finance",
+    yearsOfExperience: 20,
+    email: "youssef.elshazly@example.com"
+  }
+];

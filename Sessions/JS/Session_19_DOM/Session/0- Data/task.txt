@@ -1,0 +1,7 @@
+const manipulator = new StringManipulator('Madam, in Eden, I’m Adam')
+  .toUpperCase()      // تحويل النص إلى أحرف كبيرة: "MADAM, IN EDEN, I’M ADAM"
+  .isPalindrome()     // التحقق مما إذا كان النص باليندروم: Palindrome
+  .reverse()          // عكس النص: "MADA M’I ,NEDE NI ,MADAM"
+  .countRepeatedChars() // حساب عدد الأحرف المكررة
+  .replaceLetters(["a","b"])  // استبدال جميع الحروف بـ "*"
+  .print();           // طباعة النص الحالي

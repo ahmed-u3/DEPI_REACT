@@ -1,0 +1,34 @@
+
+////////////////////////////////// ES6 => JS
+let , const , classes , Arrow Functions , 
+Template Literals , Spread Operator, ...Destructuring,
+Default Parameters, Map , Set, Modules, Promises
+
+
+_________________________________________
+
+-- DOM (Document Object Model)
+https://www.w3schools.com/JS/js_htmldom.asp
+
+_________________________________________
+
+-- element selectors
+
+_________________________________________
+
+--  DOM Navigation
+- parentElement
+- nextElementSibling
+- previousElementSibling
+- firstElementChild
+- lastElementChild
+- childNodes
+- children
+
+_________________________________________
+
+-- crate element 
+-- add attribute / property
+-- append element / prepend / insertBefore
+-- remove element
+

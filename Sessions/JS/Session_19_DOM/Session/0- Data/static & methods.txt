@@ -1,0 +1,44 @@
+class Calculator {
+  // Method to add two integers
+  static add(a, b) {
+    console.log(1);
+    return a + b;
+  }
+
+  // Overloaded method to add three integers
+  static add(a, b, c) {
+    console.log(2);
+    return a + b + c;
+  }
+
+  // Overloaded method to add two double values
+  static add(a, b, c, d) {
+    console.log(3);
+    return a + b + c + d;
+  }
+
+  static multi(a, b) {
+    return a * b;
+  }
+
+  sayHi() {
+    console.log("Hiii");
+  }
+}
+
+console.log(Calculator.add(1, 2));
+console.log(Calculator["add"](10, 15, 20, 40));
+
+const methods = Object.getOwnPropertyNames(Calculator);
+const filterMethods = methods.filter(
+  prop => typeof Calculator[prop] === "function"
+);
+
+console.log(methods);
+console.log(filterMethods);
+console.log(Object.getOwnPropertyNames(Calculator.prototype));
+const meth = Object.getOwnPropertyNames(Calculator.prototype).filter(
+  prop =>
+    typeof Calculator.prototype[prop] === "function" && prop !== "constructor"
+);
+console.log(meth);

@@ -1,0 +1,12 @@
+.our-products .container .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.our-products .product {
+  background-color: beige;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 1rem;
+}
