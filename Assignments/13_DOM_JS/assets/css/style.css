@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li,a,button{
+    text-decoration: none;
+    cursor: pointer;
+}
+body{
+    overflow-x: hidden;
+    background-color: #f8f9fc;
+}
+a {
+    color: black; 
+}
+/*---------------Header and Nav Part---------------------*/
+
+header nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 2%; 
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 10%;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: auto ;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.6rem;
+    transition: background-color 0.7s ease;
+}
+
+.logo-img{
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+/*-------------------------End of Nav and header part ------------------------*/
+
+/*-----------------------------------Start of Main -----------------------------*/
+
+main{
+    margin-top: 10%;
+}
+
+.products{
+    width: 80%;
+    margin: 0 auto;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5vh;
+    background-color: rgba(0, 213, 255, 0.2);
+    border-radius: 10%;
+    padding: 10%;
+}
+
+button{
+    padding: 5px 30px;
+}
+img{
+    width: 60%;
+    border-radius: 10%;
+}
+/*-----------------------------------End of Main -----------------------------*/
