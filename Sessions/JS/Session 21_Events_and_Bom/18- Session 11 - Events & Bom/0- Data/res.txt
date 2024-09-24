@@ -1,0 +1,12 @@
+-- Capturing / Bubbling / Delegation 
+
+
+--bom
+--window  / innerWidth / innerHeight / matchMedia
+-- navigator => userAgent/ cookieEnabled /language /
+  onLine /getBattery / clipboard / mediaDevices 
+  / geolocation
+-- location
+-- history
+-- setTimeout / setInterval
+-- cookies / localStorage / sessionStorage
