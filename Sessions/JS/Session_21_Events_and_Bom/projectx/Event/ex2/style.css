@@ -1,0 +1,32 @@
+:root {
+  --size: 500px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level1 {
+  background-color: black;
+  width: var(--size);
+  height: var(--size);
+}
+.level2 {
+  background-color: red;
+  width: calc(var(--size) - 100px);
+  height: calc(var(--size) - 100px);
+}
+
+.level3 {
+  background-color: green;
+  width: calc(var(--size) - 200px);
+  height: calc(var(--size) - 200px);
+}
+
+.level4 {
+  background-color: blue;
+  width: calc(var(--size) - 300px);
+  height: calc(var(--size) - 300px);
+}
