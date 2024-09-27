@@ -1,0 +1,21 @@
+-- cookies / localStorage / sessionStorage
+
+-- sync / async
+-- callstack / web api
+-- callback / callback hell
+-- Async/Await / Promises / Web Workers
+-- promise
+-- async / await
+--all / race
+-- try catch
+-- api
+-- fetch
+-- fetch(url, options)
+-- options = {
+  method: 'POST', // HTTP method
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer token'
+  },
+  body: JSON.stringify({ key: 'value' }),
+}

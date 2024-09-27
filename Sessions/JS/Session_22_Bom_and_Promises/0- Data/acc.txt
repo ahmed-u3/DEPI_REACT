@@ -1,0 +1,5 @@
+pexels
+pass: !UqZ+qCXVpQbSUU#
+email: cacal40592@konetas.com
+key : SYEzdhDeHvjZ2k4QZPsHZJ8auA5fqwqHKk8tVQ0nx5SAwug4n7mvJU9f
+doc: https://www.pexels.com/api/documentation/
